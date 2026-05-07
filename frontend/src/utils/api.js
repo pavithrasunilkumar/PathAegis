@@ -7,10 +7,7 @@ const api = axios.create({
   headers: { 'Content-Type': 'application/json' },
 })
 
-const api = axios.create({
-  baseURL: BASE_URL,
-  headers: { 'Content-Type': 'application/json' },
-})
+
 
 // Attach token from localStorage
 api.interceptors.request.use((config) => {
