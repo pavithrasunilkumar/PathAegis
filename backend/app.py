@@ -9,7 +9,15 @@ from functools import wraps
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", secrets.token_hex(32))
-CORS(app, supports_credentials=True, origins=["http://localhost:3000", "http://localhost:5173"])
+CORS(
+    app,
+    supports_credentials=True,
+    origins=[
+        "http://localhost:3000",
+        "http://localhost:5173",
+        "https://path-aegis.vercel.app"
+    ]
+)
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "pathaegis.db")
 
