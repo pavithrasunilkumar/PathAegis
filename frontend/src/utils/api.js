@@ -1,14 +1,9 @@
 import axios from 'axios'
 
-
-
 const api = axios.create({
   baseURL: 'https://pathaegis-backend.onrender.com',
   headers: { 'Content-Type': 'application/json' },
 })
-
-
-
 // Attach token from localStorage
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('pathaegis_token')
