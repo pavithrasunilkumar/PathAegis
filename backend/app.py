@@ -63,6 +63,7 @@ def init_db():
     conn.commit()
     conn.close()
     print("[PathAegis] Database initialized.")
+    init_db()
 
 def hash_password(password: str) -> str:
     return hashlib.sha256(password.encode()).hexdigest()
