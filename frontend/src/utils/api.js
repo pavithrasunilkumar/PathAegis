@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://pathaegis-backend.onrender.com',
+  baseURL: 'https://pathaegis.onrender.com',
   headers: {
     'Content-Type': 'application/json',
   },
