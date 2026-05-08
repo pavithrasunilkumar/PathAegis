@@ -10,6 +10,7 @@ from functools import wraps
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", secrets.token_hex(32))
 CORS(app)
+print("CORS ENABLED")
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "pathaegis.db")
 
