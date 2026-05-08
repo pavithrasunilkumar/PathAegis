@@ -1,6 +1,6 @@
 # 🚗 PathAegis — AI Road Intelligence System
 
-> **Real-time pothole detection · Permanent crowd-sourced map · Dark dashboard**
+> **Real-time pothole detection · Permanent crowd-sourced map **
 
 PathAegis uses a custom-trained YOLOv8 model to detect potholes via webcam, logs each detection with GPS coordinates and severity to a Flask backend, and displays everything on a live Leaflet/OpenStreetMap dashboard built with React.
 
