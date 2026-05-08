@@ -14,8 +14,10 @@ CORS(
     supports_credentials=True,
     origins=[
         "http://localhost:3000",
-        "http://localhost:5173",
-        "https://path-aegis.vercel.app"
+    "http://localhost:5173",
+    "https://path-aegis.vercel.app",
+    "https://path-aegis-2d0t99i0y-pavithrasunilk68-4130s-projects.vercel.app"
+        
     ]
 )
 
