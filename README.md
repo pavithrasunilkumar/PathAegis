@@ -1,280 +1,308 @@
-# 🚗 PathAegis — AI Road Intelligence System
+<div align="center">
 
-> **Real-time pothole detection · Permanent crowd-sourced map · Dark dashboard**
+# 🚗 PathAegis — AI Road Intelligence & Pothole Detection System
 
-PathAegis uses a custom-trained YOLOv8 model to detect potholes via webcam, logs each detection with GPS coordinates and severity to a Flask backend, and displays everything on a live Leaflet/OpenStreetMap dashboard built with React.
+🌐 **Real-time pothole detection · Crowd-sourced road monitoring · Smart analytics dashboard**
+
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Version](https://img.shields.io/badge/Version-v2.0-blue)
+![Python](https://img.shields.io/badge/Backend-Python-3776AB?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/API-Flask-000000?style=for-the-badge&logo=flask)
+![React](https://img.shields.io/badge/Frontend-React.js-61DAFB?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Build-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/AI-YOLOv8-orange?style=for-the-badge)
+![OpenCV](https://img.shields.io/badge/Computer%20Vision-OpenCV-red?style=for-the-badge)
+![Machine Learning](https://img.shields.io/badge/AI-Machine%20Learning-success?style=for-the-badge)
+![Leaflet](https://img.shields.io/badge/Maps-Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite)
+![Docker](https://img.shields.io/badge/Container-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/UI-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Responsive UI](https://img.shields.io/badge/UI-Responsive-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Open--Source-brightgreen)
+
+### AI-powered smart road monitoring platform using YOLOv8, OpenCV & real-time geospatial analytics.
+
+</div>
 
 ---
 
-## 📁 Project Structure
+# 📌 Overview
 
+**PathAegis** is an AI-powered intelligent road monitoring system designed to detect potholes in real-time using Computer Vision and Deep Learning.
+
+The platform leverages a custom-trained **YOLOv8 object detection model** integrated with OpenCV to identify potholes through webcam or live camera feeds. Each detection is logged with GPS coordinates, severity level, and confidence score to a Flask backend and visualized on an interactive dashboard powered by Leaflet and OpenStreetMap.
+
+The system combines:
+
+- 🤖 YOLOv8-based pothole detection
+- 📍 GPS-enabled geospatial mapping
+- 🧠 Real-time severity analysis
+- 🌐 Interactive road intelligence dashboard
+- 📊 Crowd-sourced pothole database
+- ⚡ Live monitoring and analytics
+
+---
+
+# ✨ Features
+
+## 🤖 AI Detection System
+
+- Real-time pothole detection using YOLOv8
+- OpenCV-powered live webcam processing
+- Bounding box visualization
+- Confidence score analysis
+- Automatic severity classification
+
+---
+
+## 🗺️ Smart Mapping System
+
+- Live pothole plotting on map
+- OpenStreetMap integration
+- Real-time marker updates
+- GPS-based road intelligence
+- Crowd-sourced road condition tracking
+
+---
+
+## 📊 Analytics Dashboard
+
+- Dark-themed responsive dashboard
+- Severity statistics visualization
+- Detection count monitoring
+- Live polling system
+- Interactive pothole tables
+
+---
+
+## 🔐 Authentication System
+
+- Secure token-based authentication
+- User registration and login
+- Protected dashboard access
+- Persistent user sessions
+
+---
+
+## ⚡ Platform Features
+
+- REST API architecture
+- Docker containerization
+- Real-time frontend updates
+- Cloud-ready deployment structure
+- Multi-service modular architecture
+
+---
+
+# 📸 Screenshots
+
+## 🏠 Dashboard Interface
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+## 🎥 Real-Time Detection
+
+![Detection](./screenshots/detection.png)
+
+---
+
+## 🗺️ Live Map Visualization
+
+![Map](./screenshots/map.png)
+
+---
+
+## 📊 Analytics & Stats
+
+![Stats](./screenshots/stats.png)
+
+---
+
+## 🔐 Authentication System
+
+![Login](./screenshots/login.png)
+
+---
+
+# 🧠 AI & ML Concepts Used
+
+- YOLOv8 Object Detection
+- Computer Vision
+- OpenCV Image Processing
+- Real-Time Video Processing
+- Bounding Box Classification
+- Severity Prediction
+- Spatial Data Analysis
+- Geolocation Mapping
+
+---
+
+# 🏗️ System Architecture
+
+```bash
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   Frontend      │────▶│   Backend        │────▶│   ML Engine     │
+│  React + Vite   │     │  Flask REST API  │     │ YOLOv8 + OpenCV │
+│  Tailwind CSS   │◀────│  SQLite DB       │◀────│ Webcam Detection│
+│  Leaflet Maps   │     │  Auth System     │     │ Real-time CV    │
+└─────────────────┘     └──────────────────┘     └─────────────────┘
 ```
+
+---
+
+# 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React.js, Vite, Tailwind CSS |
+| Backend | Flask, Flask-CORS |
+| AI/ML | YOLOv8, OpenCV |
+| Database | SQLite |
+| Maps | Leaflet, OpenStreetMap |
+| Authentication | Token-based Authentication |
+| Containerization | Docker |
+| Deployment | Docker Compose |
+
+---
+
+# ⚡ Quick Start
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/PathAegis.git
+cd PathAegis
+```
+
+---
+
+## 1️⃣ Backend Setup
+
+```bash
+cd backend
+
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python app.py
+```
+
+---
+
+## 2️⃣ Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+npm run dev
+```
+
+---
+
+## 3️⃣ ML Detection Setup
+
+```bash
+cd ml
+
+pip install -r requirements.txt
+
+python detect.py --model best.pt --backend http://localhost:5000
+```
+
+---
+
+## 4️⃣ Docker Setup
+
+```bash
+docker-compose up --build
+```
+
+---
+
+# 📂 Project Structure
+
+```bash
 PathAegis/
+│
 ├── backend/
-│   ├── app.py              ← Flask REST API
-│   ├── requirements.txt
-│   └── Dockerfile
 ├── frontend/
-│   ├── src/
-│   │   ├── pages/          ← Home, Login, Register, Dashboard
-│   │   ├── components/     ← Navbar, Map, Camera, Stats, Table
-│   │   ├── hooks/          ← useAuth context
-│   │   └── utils/          ← Axios API client
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── tailwind.config.js
-│   └── Dockerfile
 ├── ml/
-│   ├── train.py            ← YOLOv8 training script
-│   ├── detect.py           ← Real-time webcam detector
-│   ├── requirements.txt
-│   └── dataset/
-│       ├── data.yaml       ← Dataset config
-│       └── README.md       ← Dataset download instructions
+├── screenshots/
 ├── docker-compose.yml
 └── README.md
 ```
 
 ---
 
-## 🚀 Quick Start — Without Docker
+# 📡 API Endpoints
 
-### 1. Backend Setup
-
-```bash
-cd PathAegis/backend
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run server
-python app.py
-# → Running on http://localhost:5000
-```
-
-### 2. Frontend Setup
-
-```bash
-cd PathAegis/frontend
-
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-# → Running on http://localhost:3000
-```
-
-### 3. ML Setup — Training (Required once)
-
-```bash
-cd PathAegis/ml
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Download dataset first! See ml/dataset/README.md
-# Then train:
-python train.py --epochs 50 --imgsz 640 --batch 16
-
-# Best model saved to:
-# runs/detect/pathaegis_v1/weights/best.pt
-```
-
-### 4. ML Setup — Real-Time Detection
-
-```bash
-cd PathAegis/ml
-
-# Copy trained model here
-cp runs/detect/pathaegis_v1/weights/best.pt .
-
-# Run detector
-python detect.py --model best.pt --backend http://localhost:5000
-
-# Options:
-#   --camera 0        Camera index (0 = default webcam)
-#   --interval 5.0    Seconds between backend sends
-#   --conf 0.35       Detection confidence threshold
-```
+| Method | Endpoint | Purpose |
+|---|---|---|
+| POST | /register | User Registration |
+| POST | /login | User Authentication |
+| POST | /pothole | Store pothole detection |
+| GET | /potholes | Retrieve pothole records |
+| GET | /stats | Detection statistics |
+| GET | /health | API health check |
 
 ---
 
-## 🐳 Quick Start — With Docker
+# 🎯 Severity Classification
 
-```bash
-cd PathAegis
-
-# Build and start all services
-docker-compose up --build
-
-# Services:
-#   Backend  → http://localhost:5000
-#   Frontend → http://localhost:3000
-
-# Stop
-docker-compose down
-```
-
-> **Note:** The ML detector must run locally (not in Docker) because it needs webcam access.
+| Severity | Detection Area |
+|---|---|
+| 🟢 Low | < 2% |
+| 🟡 Medium | 2% – 7% |
+| 🔴 High | > 7% |
 
 ---
 
-## 🌐 Ports & Connections
+# 🔒 Security Features
 
-| Service  | Port | Notes |
-|----------|------|-------|
-| Backend  | 5000 | Flask REST API |
-| Frontend | 3000 | React + Vite dev / Nginx in Docker |
-| ML       | —    | Runs locally, posts to backend:5000 |
-
-**Data flow:**
-```
-Webcam → detect.py → POST /pothole → Flask DB (SQLite)
-                                          ↑
-Frontend polls GET /potholes every 5s ───┘
-Frontend polls GET /stats  every 5s
-```
+- Token-based authentication
+- Protected API routes
+- Secure backend communication
+- Persistent database storage
+- CORS protection
 
 ---
 
-## 🔌 API Reference
+# 🔮 Future Enhancements
 
-### Auth
-
-| Method | Endpoint    | Body                          | Returns |
-|--------|-------------|-------------------------------|---------|
-| POST   | /register   | username, email, password     | 201     |
-| POST   | /login      | username/email, password      | token   |
-| POST   | /logout     | — (Bearer token)              | 200     |
-| GET    | /me         | — (Bearer token)              | user    |
-
-### Potholes
-
-| Method | Endpoint   | Params/Body                   | Returns |
-|--------|------------|-------------------------------|---------|
-| POST   | /pothole   | latitude, longitude, severity | 201 + id|
-| GET    | /potholes  | ?severity=high&limit=100      | array   |
-| GET    | /stats     | —                             | counts  |
-| GET    | /health    | —                             | ok      |
-
-### Example — Report a pothole
-
-```bash
-curl -X POST http://localhost:5000/pothole \
-  -H "Content-Type: application/json" \
-  -d '{"latitude": 18.5204, "longitude": 73.8567, "severity": "high", "confidence": 0.91}'
-```
-
-### Example — Get all potholes
-
-```bash
-curl http://localhost:5000/potholes?limit=50
-```
+- 📱 Mobile application integration
+- 🚘 Vehicle-mounted live detection
+- ☁️ Cloud-based analytics platform
+- 🧠 Advanced road damage classification
+- 📡 IoT sensor integration
+- 🛰️ Smart city infrastructure support
 
 ---
 
-## 🧠 ML Model — Training Guide
+# 👩‍💻 Author
 
-### Step 1: Download Dataset
+## Pavithra Sunilkumar
 
-1. Go to [Roboflow Universe — Pothole](https://universe.roboflow.com/search?q=pothole&t=object-detection)
-2. Choose any dataset (recommended: 500+ images)
-3. Export → **YOLOv8 format** → Download ZIP
-4. Extract into `ml/dataset/`
-
-Your structure should look like:
-```
-ml/dataset/
-  images/train/*.jpg
-  images/val/*.jpg
-  labels/train/*.txt
-  labels/val/*.txt
-  data.yaml
-```
-
-### Step 2: Train
-
-```bash
-python train.py \
-  --data dataset/data.yaml \
-  --model yolov8n.pt \   # n=nano(fast) s=small m=medium l=large
-  --epochs 50 \
-  --imgsz 640 \
-  --batch 16
-```
-
-Training time: ~20–90 min depending on GPU/CPU and dataset size.
-
-### Step 3: Use model
-
-```bash
-# Best weights automatically saved to:
-runs/detect/pathaegis_v1/weights/best.pt
-
-# Copy and run detector:
-cp runs/detect/pathaegis_v1/weights/best.pt ml/
-python ml/detect.py --model ml/best.pt
-```
+- LinkedIn: https://linkedin.com/in/pavithra-sunilkumar68
+- GitHub: https://github.com/pavithrasunilkumar
+- Portfolio: https://vermillion-panda-a08876.netlify.app/
 
 ---
 
-## 🎯 Severity Classification
+# ⭐ Support
 
-| Bounding Box / Frame Area | Severity |
-|--------------------------|----------|
-| < 2%                     | 🟢 Low   |
-| 2% – 7%                  | 🟡 Medium |
-| > 7%                     | 🔴 High  |
+If you found this project useful, consider giving it a ⭐ on GitHub.
 
 ---
 
-## 📦 ZIP the Project
+# ⚠️ License
 
-```bash
-# From parent folder:
-zip -r PathAegis.zip PathAegis/ \
-  --exclude "PathAegis/backend/venv/*" \
-  --exclude "PathAegis/frontend/node_modules/*" \
-  --exclude "PathAegis/ml/runs/*" \
-  --exclude "PathAegis/backend/pathaegis.db" \
-  --exclude "*/__pycache__/*" \
-  --exclude "*/.DS_Store"
-
-# Windows (PowerShell):
-Compress-Archive -Path PathAegis -DestinationPath PathAegis.zip
-```
+This project is intended for educational and research purposes only.
 
 ---
-
-## 🛠 Tech Stack
-
-| Layer     | Technology |
-|-----------|------------|
-| ML        | YOLOv8 (Ultralytics), OpenCV |
-| Backend   | Flask, SQLite, Flask-CORS |
-| Frontend  | React 18, Vite, Tailwind CSS, Leaflet |
-| Map       | OpenStreetMap (free, no API key) |
-| Auth      | Token-based (localStorage) |
-| Docker    | Multi-stage build, Nginx |
-
----
-
-## 🔮 User Flow
-
-1. **User registers** → stored in SQLite
-2. **User logs in** → receives Bearer token
-3. **Dashboard loads** → polls `/potholes` + `/stats` every 5 seconds
-4. **ML detector runs** → webcam captures frames
-5. **Pothole detected** → bounding box drawn + alert overlay
-6. **Data sent** → POST to `/pothole` with lat/lng/severity
-7. **Map updates** → next poll cycle shows new marker
-8. **Permanent storage** → next user sees all past detections
-
----
-
-*Built with ❤️ — 100% open-source*
