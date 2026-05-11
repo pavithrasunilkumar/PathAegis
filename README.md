@@ -96,29 +96,20 @@ The system combines:
 
 # 📸 Screenshots
 
-## 🏠 Dashboard Interface
 
-![Dashboard](./screenshots/dashboard.png)
-
----
-
-## 🎥 Real-Time Detection
-
-![Detection](./screenshots/detection.png)
+![1](./screenshots/image1.png)
 
 ---
 
-## 🗺️ Live Map Visualization
-
-![Map](./screenshots/map.png)
+![2](./screenshots/image2.png)
 
 ---
 
-## 📊 Analytics & Stats
-
-![Stats](./screenshots/stats.png)
+![3](./screenshots/image2.png)
 
 ---
+
+
 
 ## 🔐 Authentication System
 
