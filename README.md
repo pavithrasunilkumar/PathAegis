@@ -97,15 +97,15 @@ The system combines:
 # 📸 Screenshots
 
 
-![1](./screenshots/image1.png)
+![1](./screenshots/img1.png)
 
 ---
 
-![2](./screenshots/image2.png)
+![2](./screenshots/img2.png)
 
 ---
 
-![3](./screenshots/image2.png)
+![3](./screenshots/img2.png)
 
 ---
 
