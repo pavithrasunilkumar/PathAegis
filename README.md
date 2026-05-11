@@ -3,6 +3,7 @@
 # 🚗 PathAegis — AI Road Intelligence & Pothole Detection System
 
 🌐 **Real-time pothole detection · Crowd-sourced road monitoring · Smart analytics dashboard**
+## 🌐 Live Deployment-[🛣️ Visit PathAegis](https://path-aegis.vercel.app/)
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Version](https://img.shields.io/badge/Version-v2.0-blue)
